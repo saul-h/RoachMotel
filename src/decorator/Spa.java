@@ -1,16 +1,19 @@
+package decorator;
+import factory.Room;
+import strategy.PaymentStrategy;
 
-public class SprayResistantShower extends AmenitiesDecorator {
+public class Spa extends AmenitiesDecorator {
 	
 	/////INSTANCE VARIABLES/////
 	protected Room room;
-	public static final double COST = 25;
+	public static final double COST = 20;
 	
 	/////METHODS/////
-	public SprayResistantShower(Room r){
+	public Spa(Room r){
 		this.room = r;
 	}
 	public String getDescription(){
-		return this.room.getDescription() + " with Spray Resistant Shower,";
+		return this.room.getDescription() + " with Spa,";
 	}
 	public int cost(){
 		return (int) (this.room.cost() + COST);

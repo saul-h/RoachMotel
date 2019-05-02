@@ -4,6 +4,11 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import factory.RoomFactory;
+import observer.RoachMotel;
+import strategy.MasterRoach;
+import strategy.RoachPal;
+
 public class FrontDesk {
 
 	public static String makePayment(int index, String paymentMethod, RoachMotel roachMotel){

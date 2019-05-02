@@ -1,16 +1,18 @@
+package factory;
+import strategy.PaymentStrategy;
 
-public class RegularRoom extends Room {
+public class Suite extends Room {
 	
 	/////INSTANCE VARIABLES/////
-	public static final double COST = 50;
+	public static final double COST = 100;
 	
 	/////METHODS/////
-	public RegularRoom(){
+	public Suite(){
 		super();
-		this.description = "Regular Room";
+		this.description = "Suite";
 	}
-	public RegularRoom(String desc, int rNumber, int numOfDays){
-		super("Regular Room",rNumber,numOfDays);
+	public Suite(String desc, int rNumber, int numOfDays){
+		super("Suite",rNumber,numOfDays);
 	}
 	public int cost(){
 		return (int) (this.getNumberOfDaysStayed() * COST);

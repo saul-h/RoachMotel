@@ -1,4 +1,7 @@
+package observer;
 import java.util.ArrayList;
+
+import factory.Room;
 
 public class RoachMotel implements RoachMotelSubject {
 
