@@ -1,3 +1,5 @@
+package factory;
+import strategy.PaymentStrategy;
 
 public class DeluxeRoom extends Room {
 	

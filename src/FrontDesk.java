@@ -4,6 +4,11 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import factory.RoomFactory;
+import observer.RoachMotel;
+import strategy.MasterRoach;
+import strategy.RoachPal;
+
 public class FrontDesk {
 
 	public static String makePayment(int index, String paymentMethod, RoachMotel roachMotel){
@@ -146,6 +151,7 @@ public class FrontDesk {
 			
 			switch(Integer.parseInt(firstChoice)){
 				case 1:{
+					// Check in Roach Guest
 					String colonyName;
 					String numberOfOccupants;
 					String growthRate;
@@ -235,19 +241,23 @@ public class FrontDesk {
 					break;
 				}
 				case 2:{
+					// Check out Roach Guest
 					System.out.println("CHOICE 2");
 					break;
 				}
 				case 3:{
+					// Check Rooms(Roach Throws Party)
 					System.out.println("CHOICE 3");
 					break;
 				}
 				case 4:{
+					// Check Roach Guest Waitlist
 					System.out.println("CHOICE 4");
 					break;
 				}
 				case 5:{
-					System.out.println("CHOICE 5");
+					// Exit
+					System.exit(0);
 					break;
 				}
 			}

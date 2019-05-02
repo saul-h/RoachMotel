@@ -1,4 +1,4 @@
-
+package observer;
 public class RoachColony implements RoachObserver{
 	
 	/////INSTANCE VARIABLES/////

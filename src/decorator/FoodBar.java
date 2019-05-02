@@ -1,16 +1,19 @@
+package decorator;
+import factory.Room;
+import strategy.PaymentStrategy;
 
-public class Autorefill extends AmenitiesDecorator {
+public class FoodBar extends AmenitiesDecorator {
 	
 	/////INSTANCE VARIABLES/////
 	protected Room room;
-	public static final double COST = 5;
+	public static final double COST = 10;
 	
 	/////METHODS/////
-	public Autorefill(Room r){
+	public FoodBar(Room r){
 		this.room = r;
 	}
 	public String getDescription(){
-		return this.room.getDescription() + " with Autorefill of the food bar,";
+		return this.room.getDescription() + " with Food Bar,";
 	}
 	public int cost(){
 		return (int) (this.room.cost() + COST);

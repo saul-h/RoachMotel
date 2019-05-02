@@ -1,5 +1,9 @@
+package factory;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+
+import observer.RoachColony;
+import strategy.PaymentStrategy;
 
 public abstract class Room {
 	

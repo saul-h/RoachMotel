@@ -1,3 +1,4 @@
+package strategy;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
